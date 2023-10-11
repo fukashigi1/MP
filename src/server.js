@@ -57,6 +57,7 @@ const tiendaRuta = require('./routes/tiendaRuta');
 const ayudaRuta = require('./routes/ayudaRuta');
 const imagenRuta = require('./routes/imagenRuta');
 const aplicacionRuta = require('./routes/aplicacionRuta');
+const terminosRuta = require('./routes/terminosRuta');
 
 // Rutas
 app.use('/login', usuarioRuta); 
@@ -68,6 +69,7 @@ app.use('/tienda', tiendaRuta);
 app.use('/ayuda', ayudaRuta);
 app.use('/imagen', imagenRuta);
 app.use('/aplicacion', aplicacionRuta);
+app.use('/terminos', terminosRuta);
 
 app.listen(app.get('port'), ()=>{
     console.log('Server corriendo en puerto: ' + app.get('port'));
