@@ -29,6 +29,10 @@ $(document).ready(function(){
         window.location.href = 'login'; 
       });
 
+      $("#terminos").on("click", function(){
+        window.location.href = 'terminos'; 
+      });
+
       // Desplazamiento barra de navegación
       
       $("#actualizaciones").click(function() {
